@@ -35,7 +35,9 @@ Request.prototype.init = function (options) {
 
 	dns.resolveSrv(self.uri.host, function (err, records) {
 		if (err) {
-			throw new Error('DNS SRV lookup error');
+                       	options.uri = self.uri;
+			self.original_init(options);
+			return;
 		}
 
 		// TODO: We need this more sexy. And (optionally) caching.
