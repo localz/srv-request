@@ -1,5 +1,5 @@
 {
-  "name": "srv-request",
+  "name": "@localz/srv-request",
   "version": "1.0.0",
   "description": "Extends Request with DNS SRV record lookup",
   "main": "index.js",
@@ -30,5 +30,8 @@
   },
   "devDependencies": {
     "standard": "^10.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
