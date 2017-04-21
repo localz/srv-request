@@ -30,3 +30,5 @@ request('http://myservice.skydns.local/v1/ping', function (error, response, body
 ```
 
 The HTTP requests will then be made to the URI: `http://server1-myservice-8000.myservice.skydns.local:8110/v1/ping`.
+
+If the SRV lookup fails, then it will attempt to make the request anyway (so it will just do a standard DNS lookup)
