@@ -1,4 +1,13 @@
 language: node_js
 node_js:
-  - "0.10"
-  - "0.12"
+- '4.6'
+- '6.10'
+deploy:
+  provider: npm
+  email: mg@localz.co
+  api_key: ${NPM_TOKEN}
+  on:
+    tags: true
+    branch: master
+    node: '6.10'    
+    repo: localz/srv-request
