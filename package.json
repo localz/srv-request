@@ -1,6 +1,6 @@
 {
   "name": "@localz/srv-request",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Extends Request with DNS SRV record lookup",
   "main": "index.js",
   "scripts": {
@@ -26,10 +26,10 @@
   },
   "homepage": "https://github.com/localz/srv-request",
   "dependencies": {
-    "request": "^2.53.0"
+    "request": "^2.81.0"
   },
   "devDependencies": {
-    "standard": "^10.0.2"
+    "standard": "^10.0.3"
   },
   "publishConfig": {
     "access": "public"
