@@ -13,7 +13,10 @@
   },
   "ava": {
     "verbose": true,
-    "serial": true
+    "serial": true,
+    "files": [
+      "tests/*Test.js"
+    ]
   },
   "keywords": [
     "request",
