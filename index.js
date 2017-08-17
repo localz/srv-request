@@ -34,7 +34,9 @@ Request.prototype.init = function (options) {
   }
 
   dns.resolveSrv(self.uri.host, function (err, records) {
-    if (err) {
+    // If there is an error or there is no records (i.e. records is null or empty)
+    // fallback to original
+    if (err || !(records && records.length > 0)) {
       options.uri = self.uri
       self.original_init(options)
       return

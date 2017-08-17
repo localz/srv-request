@@ -1,14 +1,22 @@
 {
   "name": "@localz/srv-request",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Extends Request with DNS SRV record lookup",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Warning: no test specified\" && exit 0"
+    "test": "ava",
+    "lint": "standard"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/localz/srv-request.git"
+  },
+  "ava": {
+    "verbose": true,
+    "serial": true,
+    "files": [
+      "tests/*Test.js"
+    ]
   },
   "keywords": [
     "request",
@@ -26,12 +34,15 @@
   },
   "homepage": "https://github.com/localz/srv-request",
   "dependencies": {
-    "request": "^2.53.0"
+    "request": "^2.81.0"
   },
   "devDependencies": {
-    "standard": "^10.0.2"
+    "standard": "^10.0.3",
+    "ava": "^0.20.0",
+    "nock": "^9.0.14",
+    "sinon": "^2.3.8"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "private"
   }
 }
