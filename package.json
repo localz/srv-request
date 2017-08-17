@@ -43,6 +43,6 @@
     "sinon": "^2.3.8"
   },
   "publishConfig": {
-    "access": "private"
+    "access": "restricted"
   }
 }
